@@ -35,8 +35,8 @@ jobs:
     
     - name: Build & tag Docker image to Docker Hub
       run: |
-        docker build  -t dchinchure/daya-node:${{ env.BRANCH_NAME }}-${{ env.COMMIT_ID }}-${{ env.VERSION }} .
-        docker push dchinchure/daya-node:${{ env.BRANCH_NAME }}-${{ env.COMMIT_ID }}-${{ env.VERSION }}
+        docker build  -t dchinchure/python-flask:${{ env.BRANCH_NAME }}-${{ env.COMMIT_ID }}-${{ env.VERSION }} .
+        docker push dchinchure/python-flask:${{ env.BRANCH_NAME }}-${{ env.COMMIT_ID }}-${{ env.VERSION }}
 
 
     
